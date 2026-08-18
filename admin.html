@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/LogoEscola.png">
+    <title>Ciências da Natureza + Matemática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            background-image: url('img/admin.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: 100px;
+            padding-top: 100px;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            z-index: 2;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            margin: 0;
+            font-size: 60px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .content div {
+            width: 48%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #f4f4f9;
+        }
+
+        .content {
+    display: flex;
+    margin: 20px 0; /* Espaço acima e abaixo dos blocos */
+    width: calc(100% - 40px); /* Para considerar a margem */
+    margin-left: 20px; /* Margem da esquerda */
+    margin-right: 20px; /* Margem da direita */
+}
+
+.content-box {
+    flex: 1; /* Faz os blocos ocuparem o mesmo espaço */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Espaço lateral entre os blocos */
+}
+
+/* Para adicionar espaço entre os blocos */
+.content-box:not(:last-child) {
+    margin-bottom: 20px; /* Espaço entre os blocos */
+}
+
+/* Remove a margem da primeira e da última caixa */
+.content-box:first-child {
+    margin-left: 0; /* Sem margem à esquerda no primeiro bloco */
+}
+
+.content-box:last-child {
+    margin-right: 0; /* Sem margem à direita no último bloco */
+}
+
+.aligned-list {
+    list-style: inside; /* Garante que as bolinhas fiquem dentro da área de texto */
+    padding: 0;
+    margin: 0 auto; /* Centraliza o bloco da lista */
+    display: inline-block; /* Torna a lista um bloco centralizável */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.aligned-list li {
+    margin-bottom: 5px; /* Espaçamento entre os itens da lista */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.alinhamento-texto {
+            margin-left: 250px;
+        }
+
+        /* Estilos apenas para dispositivos móveis */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .content {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .content div {
+                width: 100%;
+                margin-bottom: 20px; /* Espaço entre os blocos */
+            }
+
+            .depoimento p {
+                margin-left: 0;
+                margin-bottom: 10px; /* Espaço entre depoimentos */
+            }
+
+            .alinhamento-texto {
+            margin-left: 15px;
+        }   
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Administração (ETEC)</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container content">
+
+            <div style="text-align: center;">
+                <h2>Conteúdos e materiais</h2>
+                <li class="alinhamento-texto" style="text-align: left;"><b>Comunicação Empresarial</b>
+                    <ol style="margin-left: 50px; text-align: left;">
+                        <li>Relevância da comunicação empresarial;</li>
+                        <li>Ferramentas e tecnologias de comunicação;</li>
+                        <li>Desafios e soluções na comunicação empresarial.</li>
+                    </ol>
+                </li>
+                <li class="alinhamento-texto" style="text-align: left;"><b>Introdução à administração, legislação e pessoas </b>
+                    <ol style="margin-left: 50px; text-align: left;">
+                        <li>Fundamentos da administração;</li>
+                        <li>Legislação e normas trabalhistas;</li>
+                        <li>Gestão de pessoas.</li>
+                    </ol>
+                </li>
+                <li class="alinhamento-texto" style="text-align: left;"><b>Carreira e competências para o mercado de trabalho </b>
+                    <ol style="margin-left: 50px; text-align: left;">
+                        <li>Desenvolvimento de carreira;</li>
+                        <li>Competências essenciais para o mercado;</li>
+                        <li>Networking e oportunidades profissionais.</li>
+                    </ol>
+                </li>
+                <li class="alinhamento-texto" style="text-align: left;"><b>Matemática aplicada à administração </b>
+                    <ol style="margin-left: 50px; text-align: left;">
+                        <li>Fundamentos de matemática financeira;</li>
+                        <li>Estatística e análise de dados;</li>
+                        <li>Modelagem matemática.</li>
+                    </ol>
+                </li>
+            </div>
+            <div>
+                <h2>Depoimentos de Alunos</h2>
+                <p>"O curso de Administração ele abrange muitas áreas do mercado, um curso muito bom, com ótimos professores, ele nos dá uma ampla visão do empregador e do empregado, nos aproximando do atual mercado de trabalho." -<b> Marcos Josué</b></p>
+                <p>"O curso de administração tem ensino muitas coisas fundamentais para nós, ainda mais agora que estamos entrando na fase "jovem adulto". Tem nos ensinado a como administrar não só uma empresa como a nossa própria vida, rotina, finanças e como ser um ótimo administrador em uma empresa. Aprendemos e estamos aprendendo temas importantes que não são ensinados para nós em matérias básicas que são passadas para nós na escola, vemos sobre a como se portar, como tratar o stakerholder da nossa empresa, como a saúde mental e inteligência emocional é importante, vemos como simples cálculos ajuda em uma empresa, aprendemos a criar ou preparar planilhas e tabelas. 
+                    Vejo que tanto para mim como para minha sala, nossa escolha de fazer administração foi muito importante, pois sairemos da escola prontos para o mundo lá fora que nós espera." -<b> Anne Mayumi Sato E Saito</b></p>
+                <p>"No curso de Administração, da Etec, tivemos diversos aprendizados. Um dos pontos mais fortes é que eles adaptam o que estudamos para as realidades de um jovem na atualidade, nos ensinando a nos portar como um destaque no mercado de trabalho, ou aonde quer que estejamos. Através desses ensinos, tenho me dedicado a desenvolver cada vez mais da minha capacidade como um administrador." -<b> Henrico Antônio da Silva Faria</b></p>
+                <p>"Estar em um curso técnico administrativo é o principal passo para o sucesso de uma carreira bem sucedida, acho uma oportunidade única e de extrema importância para a educação de jovens e futuros empresários.
+                      Eu gostei bastante além de abordar temos e situações importantes acho necessário que as pessoas busquem conhecer isso tbm ." -<b> Kemelly Eduarda</b></p>
+                <p>"No curso de administração está me ajudando muito, inclusive a me organizar, já que eu não sabia me organizar, aprendo sobre como devo me comportar em determinado ambiente e espaço dentro de uma empresa e também como funciona uma empresa e isso vai servir e muito pra minha carreira no ambiente de trabalho." -<b> Lucas Gabriel</b></p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Itinerários formativos do ano de 2025 do Antonio Guedes de Azevedo - <b> Bauru/SP </b>. Todos os direitos reservados à escola e aos desenvolvedores.</p>
+        <p style="color: rgb(0, 0, 0); opacity: 35%;">By Lukas Oliveira 2°B</p>
+    </footer>
+</body>
+</html>

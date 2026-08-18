@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/LogoEscola.png">
+    <title>Ciências da Natureza + Matemática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            background-image: url('img/exatas.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: 100px;
+            padding-top: 100px;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            z-index: 2;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            margin: 0;
+            font-size: 60px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .content {
+            display: flex;
+            margin: 20px 0; /* Espaço acima e abaixo dos blocos */
+            width: calc(100% - 40px); /* Para considerar a margem */
+        }
+
+        .content div {
+            width: 48%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #f4f4f9;
+        }
+
+        .depoimento p {
+            text-align: center;
+            margin-left: 25px;
+        }
+
+        .alinhamento-texto {
+            margin-left: 250px;
+        }
+
+        /* Estilos apenas para dispositivos móveis */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .content {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .content div {
+                width: 100%;
+                margin-bottom: 20px; /* Espaço entre os blocos */
+            }
+
+            .depoimento p {
+                margin-left: 0;
+                margin-bottom: 10px; /* Espaço entre depoimentos */
+            }
+
+            .alinhamento-texto {
+            margin-left: 15px;
+        }   
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ciências da Natureza + Matemática</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container content">
+            <div style="text-align: center;">
+                <h2>Conteúdos e materiais</h2>
+                    <li class="alinhamento-texto" style="text-align: left;"><b>Empreendedorismo </b>
+                    <ol style="margin-left: 50px; text-align: left;">
+                        <li>Identificação de oportunidades;</li>
+                        <li>Desenvolvimento de planos de negócios;</li>
+                        <li>Domínio de marketing e gestão financeira.</li>
+                    </ol>
+                </li>
+                <li class="alinhamento-texto" style="text-align: left;"><b>Programação</b>
+                    <ol style="margin-left: 50px; text-align: left;">
+                        <li>Aprenda a desenvolver sites, aplicativos móveis e jogos;</li>
+                        <li>Descubra os segredos das linguagens de programação;</li>
+                        <li>Trabalhe com Python e JavaScript.</li>
+                    </ol>
+                </li>
+                <li class="alinhamento-texto" style="text-align: left;"><b>Biotecnologia</b>
+                    <ol style="margin-left: 50px; text-align: left;">
+                        <li>Explore a transformação da biotecnologia em diversas áreas;</li>
+                        <li>Realize experimentos inovadores;</li>
+                        <li>Trabalhe em pesquisas desafiadoras.</li>
+                    </ol>
+                </li>
+                <li class="alinhamento-texto" style="text-align: left;"><b>Química Aplicada</b>
+                    <ol style="margin-left: 50px; text-align: left;">
+                        <li>Explore o mundo dos elementos químicos;</li>
+                        <li>Realize experiências incríveis;</li>
+                        <li>Entenda fundamentos e aplicações práticas da química.</li>
+                    </ol>
+                     </li>
+            </div>
+            <div class="depoimento">
+                <h2>Depoimentos de alunos</h2>
+                <p>"O itinerário de Matemática e Robótica é uma boa ideia, mas mal executada pelo estado, por falta de estrutura e apoio, o que acaba limitando seu desenvolvimento" - <b>Larissa Gabrielly</b></p>
+                <p> (Aperfeiçoado) "O itinerário foi aceitável, mas faltou aprofundamento em matemática. As matérias de tecnologia, robótica, empreendedorismo e biotecnologia parecem redundantes, embora a tecnologia e robótica sejam boas para quem deseja seguir na ciência da computação." -<b> Jorge Ricardo</b></p>
+                <p>"A po, a gente entrou ( a maioria ) com um pensamento de ter mais aulas sobre matemática, física ( áreas de exatas ) mas a única coisa que a gente tem de diferente é aprofundamento em tecnologia e robótica e biotecnologia que só serve se você quiser ser médico" -<b> Laura Minuti</b></p>
+                <p>"A gente não aprofunda em matemática e para praticamente a mesma coisa só troca que a gente tem biotecnologia tecnologia" -<b> Maria Eduarda Leandro</b></p>
+                <p>"Escolhi matemática para aprender mais sobre, porém não tem nada a vê' " -<b> Matheus Leme</b></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Itinerários formativos do ano de 2025 do Antonio Guedes de Azevedo - <b> Bauru/SP </b>. Todos os direitos reservados à escola e aos desenvolvedores.</p>
+        <p style="color: rgb(0, 0, 0); opacity: 35%;">By Lukas Oliveira 2°B</p>
+    </footer>
+</body>
+</html>

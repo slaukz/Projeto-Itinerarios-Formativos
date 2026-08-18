@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/LogoEscola.png">
+    <title>AGA: Itinerários Formativos</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo do Cabeçalho */
+        header {
+            position: relative; /* Para que a sobreposição funcione */
+            background-image: url('img/fundo2.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: 100px;
+            padding-top: 100px; 
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade para escurecer */
+            z-index: 1; /* Coloque atrás do conteúdo */
+        }
+        
+        header .container {
+            position: relative; /* Para que o texto fique acima da sobreposição */
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column; /* Alinha os itens em coluna */
+            align-items: center; /* Centraliza o conteúdo horizontalmente */
+            z-index: 2; /* Coloca a container acima da sobreposição */
+        }
+
+        header .logo {
+            width: 200px; /* Ajuste o tamanho conforme necessário */
+            height: auto;
+        }
+
+        header h1 {
+            color: #fff;
+            margin: 0;
+            font-size: 55px;
+            text-align: center; /* Centraliza o título */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            color: #fff; /* Cor do texto do parágrafo */
+            margin: 0; /* Remove margens padrão */
+            margin-bottom: 5px;
+            font-size: 20px; /* Ajuste o tamanho do texto */
+            text-align: center; /* Centraliza o parágrafo */
+        }
+
+        .social-icons {
+            position: absolute;
+            top: 175px;
+            left: 47.5%;
+            z-index: 3;
+        }
+
+        .social-icons a {
+            text-decoration: none; /* Remove sublinhado dos links */
+            margin-right: 10px; /* Espaçamento entre os ícones */
+        }
+
+        .social-icons img {
+            width: 30px;
+            border: none;
+        }
+
+        main h2 {
+            text-align: center;
+        }
+
+        footer {
+            color: black;
+            text-align: center;
+            padding: 1em 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Estilo dos Botões */
+        .itinerary-button {
+            display: inline-block;
+            width: 180px;
+            height: 220px;
+            margin: 15px;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .itinerary-button img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .itinerary-button:hover,
+        .itinerary-button:focus {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .itinerary-button p {
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 0px 10px;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 10px; 
+            }
+
+            header h1 {
+                font-size: 2rem; 
+            }
+
+            header p {
+                font-size: 1rem; 
+            }
+
+            header .logo {
+                width: 200px; 
+                height: auto;
+                display: block; /* Adiciona block para centralização */
+                margin: 0 auto; /* Centraliza horizontalmente */
+            }  
+
+            .social-icons {
+                position: absolute;
+                top: 170px;
+                left: 38.5%;
+                z-index: 3;
+            }
+
+            .itinerary-button {
+                width: 90%; 
+                height: auto; 
+            }
+
+            .itinerary-button img {
+                height: 100px; 
+            }
+
+            footer {
+                margin-top: 20px; /* Espaço acima do rodapé */
+                position: relative; /* Altera a posição para fluir corretamente */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem; 
+            }
+
+            header p {
+                font-size: 0.9rem; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/LogoEscola.png" alt="Logo do Site" class="logo">
+            
+            <div class="social-icons">
+                <a href="https://www.instagram.com/agabaurusp/" target="_blank">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/peiagabauru" target="_blank">
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+            </div>
+    
+            <h1>Guia de itinerários formativos Guedes</h1>
+            <p>Sejam bem-vindos alunos!</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Escolha um itinerário abaixo para visualizar mais informações sobre ele</h2>
+            <div style="text-align:center;">
+                <a href="exatas.html" class="itinerary-button">
+                    <img src="img/exatas.jpg" alt="Itinerário de Matemática">
+                    <p>Ciências da Natureza + Matemática</p>
+                </a>
+                <a href="humanas.html" class="itinerary-button">
+                    <img src="img/humanas.jpg" alt="Itinerário de Humanas">
+                    <p>Ciências Humanas + Linguagens</p>
+                </a>
+                <a href="admin.html" class="itinerary-button">
+                    <img src="img/admin.jpg" alt="Itinerário de Administração (ETEC)">
+                    <p>Administração (ETEC)</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Itinerários formativos do ano de 2025 do Antonio Guedes de Azevedo - <b> Bauru/SP</b>. Todos os direitos reservados à escola e aos desenvolvedores.</p>
+            <p style="color: rgb(0, 0, 0); opacity: 35%;">By Lukas Oliveira 2°B</p>
+        </div>
+    </footer>
+</body>
+</html>

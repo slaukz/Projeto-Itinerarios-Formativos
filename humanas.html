@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/LogoEscola.png">
+    <title>Ciências Humanas + Linguagens</title>
+    <style>
+        /* Mesma estrutura de estilo do site de Matemática */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            background-image: url('img/humanas.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: 100px;
+            padding-top: 100px;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            z-index: 2;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            margin: 0;
+            font-size: 60px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .content div {
+            width: 48%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #f4f4f9;
+        }
+
+        .content {
+    display: flex;
+    margin: 20px 0; /* Espaço acima e abaixo dos blocos */
+    width: calc(100% - 40px); /* Para considerar a margem */
+    margin-left: 20px; /* Margem da esquerda */
+    margin-right: 20px; /* Margem da direita */
+}
+
+.content-box {
+    flex: 1; /* Faz os blocos ocuparem o mesmo espaço */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Espaço lateral entre os blocos */
+}
+
+/* Para adicionar espaço entre os blocos */
+.content-box:not(:last-child) {
+    margin-bottom: 20px; /* Espaço entre os blocos */
+}
+
+/* Remove a margem da primeira e da última caixa */
+.content-box:first-child {
+    margin-left: 0; /* Sem margem à esquerda no primeiro bloco */
+}
+
+.content-box:last-child {
+    margin-right: 0; /* Sem margem à direita no último bloco */
+}
+
+.aligned-list {
+    list-style: inside; /* Garante que as bolinhas fiquem dentro da área de texto */
+    padding: 0;
+    margin: 0 auto; /* Centraliza o bloco da lista */
+    display: inline-block; /* Torna a lista um bloco centralizável */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.aligned-list li {
+    margin-bottom: 5px; /* Espaçamento entre os itens da lista */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.alinhamento-texto {
+            margin-left: 250px;
+        }
+
+        /* Estilos apenas para dispositivos móveis */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .content {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .content div {
+                width: 100%;
+                margin-bottom: 20px; /* Espaço entre os blocos */
+            }
+
+            .depoimento p {
+                margin-left: 0;
+                margin-bottom: 10px; /* Espaço entre depoimentos */
+            }
+
+            .alinhamento-texto {
+            margin-left: 1px;
+            }   
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ciências Humanas + Linguagens</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container content">
+            <div style="text-align: center;">
+                <h2>Conteúdos e materiais</h2>
+                <li class="alinhamento-texto" style="text-align: left;"><b>Liderança e ética</b>
+                    <ol style="margin-left: 50px; text-align: left;">
+                        <li>Inspirar e motivar;</li>
+                        <li>Resolução construtiva de conflitos;</li>
+                        <li>Cultivar confiança e respeito.</li>
+                    </ol>
+                </li>
+                <li class="alinhamento-texto" style="text-align: left;"><b>Midias digitais e processos criativos</b>
+                    <ol style="margin-left: 50px; text-align: left;">
+                        <li>Técnicas avançadas de design gráfico;</li>
+                        <li>Estratégias de marketing digital;</li>
+                        <li>Monetização de habilidades Criativas.</li>
+                    </ol>
+                </li>
+                <li class="alinhamento-texto" style="text-align: left;"><b>Geopolítica</b>
+                    <ol style="margin-left: 50px; text-align: left;">
+                        <li>Complexidades da globalização;</li>
+                        <li>Interpretação de mapas e análise de dados;</li>
+                        <li>Formulação de argumentos bem embasados.</li>
+                    </ol>
+                </li>
+                <li class="alinhamento-texto" style="text-align: left;"><b>Oratória e comunicação</b>
+                    <ol style="margin-left: 50px; text-align: left;">
+                        <li>Comunicação assertiva;</li>
+                        <li>Apresentações em público;</li>
+                        <li>Interação virtual eficaz.</li>
+                    </ol>
+                </li>
+                <li class="alinhamento-texto" style="text-align: left;"><b>Filosofia e sociedade moderna</b>
+                    <ol style="margin-left: 50px; text-align: left;">
+                        <li>Compreensão da sociedade;</li>
+                        <li>Debates sobre questões atuais;</li>
+                        <li>Reflexão crítica sobre tecnologia.</li>
+                    </ol>
+                </li>
+            </div>
+            <div>
+                <h2>Depoimentos de Alunos</h2>
+                <p>"O itinerário é meio cansativo, não foi muito bom para mim, mas é muito bom para quem quer se formar em profissões de advocacia, e outras que precisam de falas bonitas e oratórias convincentes" - <b>João Cristianini</b></p>
+                <p>"O curso de humanas não foi como eu imaginava q seria mas anda sendo muito bom, contamos com aulas de arte e mídias digitais, filosofia e sociedade moderna, liderança e oratória." -<b> Gabrielly Pontes</b></p>
+                <p>"Ele auxilia no aprofundamento da área de linguagens, permitindo que os indivíduos que futuramente quiserem cursar algo dentro desse ramo, tenham uma boa base desde o Ensino Médio." -<b> Erick Felipe</b></p>
+                <p>"Eu acho que meu itinerário é bom, porém não era tudo oque eu imaginava, achava que realmente teria muitas coisas de humanas, porém tem mais exatas, por esse lado não é bom" -<b> Isadora Legnari</b></p>
+                <p>"O itinerário de humanas foi bom pra mim porque eu quero seguir nessa área pra minha faculdade, então o aprofundamento das matérias de humanas me ajudou a ter mais certeza da minha escolha e ter uma "prévia" do que eu provavelmente vou ver na faculdade" -<b> Lívia Viana</b></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Itinerários formativos do ano de 2025 do Antonio Guedes de Azevedo - <b> Bauru/SP </b>. Todos os direitos reservados à escola e aos desenvolvedores.</p>
+        <p style="color: rgb(0, 0, 0); opacity: 35%;">By Lukas Oliveira 2°B</p>
+    </footer>
+</body>
+</html>
